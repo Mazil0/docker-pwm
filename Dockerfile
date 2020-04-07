@@ -1,6 +1,6 @@
 FROM tomcat:jre8
 
-MAINTAINER Florian JUDITH <florian.judith.b@gmail.com>
+MAINTAINER Mazil0 <vorobeyav@gmail.com>
 ENV SNAPSHOT=2020-03-19T20_16_30Z
 ENV VERSION=2.0.0-SNAPSHOT
 ENV MYSQL_DRIVER_VERSION=8.0.15
