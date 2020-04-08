@@ -1,5 +1,5 @@
 FROM tomcat:jre8
-https://www.pwm-project.org/artifacts/pwm/release/v1.9.1/pwm-1.9.1.war
+
 MAINTAINER Mazil0 <vorobeyav@gmail.com>
 ENV SNAPSHOT=v1.9.1
 ENV VERSION=v1.9.1
