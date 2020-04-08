@@ -1,8 +1,8 @@
 FROM tomcat:jre8
-
+https://www.pwm-project.org/artifacts/pwm/release/v1.9.1/pwm-1.9.1.war
 MAINTAINER Mazil0 <vorobeyav@gmail.com>
-ENV SNAPSHOT=2020-03-19T20_16_30Z
-ENV VERSION=2.0.0-SNAPSHOT
+ENV SNAPSHOT=v1.9.1
+ENV VERSION=v1.9.1
 ENV MYSQL_DRIVER_VERSION=8.0.15
 ENV POSTGRES_DRIVER_VERSION=42.2.5
 ENV MONGODB_DRIVER_VERSION=3.9.1
@@ -25,7 +25,7 @@ RUN groupadd --system --gid 1234 pwm && \
 
 # Download & deploy pwm.war
 RUN cd /tmp && \
-    wget https://www.pwm-project.org/artifacts/pwm/build/${SNAPSHOT}/pwm-${VERSION}.war && \
+    wget https://www.pwm-project.org/artifacts/pwm/release/${SNAPSHOT}/pwm-${VERSION}.war && \
     unzip /tmp/pwm-${VERSION}.war -d  ${PWM_HOME} && \
     chmod a+x ${PWM_HOME}/WEB-INF/command.sh
 
